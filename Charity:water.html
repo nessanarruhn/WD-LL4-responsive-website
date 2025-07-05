@@ -163,7 +163,7 @@
   <section class="value">
     <div class="container">
       <h2>Why It Matters</h2>
-      <p> You care deeply about justice and turning passion into real change. At charity: water, we believe clean water is a human right.    That’s why 100% of public donations fund life-changing water projects, with full transparency and stories that show exactly where your impact goes. When you give, you’re not just donating. You’re standing up for dignity, for equity, and for the future of communities often left behind. This is your chance to fight for something that matters and know it’s making a difference. </p>
+      <p> You care deeply about justice and turning passion into real change. At charity: water, we believe clean water is a human right. That’s why 100% of public donations fund life-changing water projects, with full transparency and stories that show exactly where your impact goes. When you give, you’re not just donating. You’re standing up for dignity, for equity, and for the future of communities often left behind. This is your chance to fight for something that matters and know it’s making a difference. </p>
     </div>
   </section>
 
@@ -193,13 +193,13 @@
       const popup = document.getElementById('popup-message');
       popup.textContent = message;
       popup.classList.add('show');
-
+      
       setTimeout(() => {
         popup.classList.remove('show');
       }, 3000);
     }
 
-    document.getElementById('Donate-now-btn').addEventListener('click', function () {
+    document.getElementById('donate-now-btn').addEventListener('click', function () {
       showPopup('Thank you for your generous support! Together, we make a difference.');
     });
 
