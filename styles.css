@@ -1,0 +1,145 @@
+/* All styles for Charity:water.html are now in this file */
+
+body {
+  font-family: 'Proxima Nova', Georgia, serif;
+  background-color: #fefcf7;
+  color: #2e2e2e;
+  margin: 0;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+header.hero {
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+  url("../img/MK.jpg") no-repeat center center/cover;
+  color: #ffffff;
+  text-align: center;
+  padding: 120px 20px;
+  position: relative;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+.hero-content p {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.btn, .btn-bordered {
+  background-color: #f5b400;
+  color: #2e2e2e;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn {
+  border: 3px solid #2e2e2e;
+}
+
+.btn:hover, .btn-bordered:hover {
+  background-color: #dca000;
+  border-color: #2e2e2e;
+  transform: translateY(-2px);
+}
+
+.btn-bordered {
+  border: 3px solid #2e2e2e;
+  background-color: transparent;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section.value, section.photo-section {
+  padding: 60px 20px;
+  background-color: #fff7e1;
+}
+
+section.cta {
+  padding: 60px 20px;
+}
+
+.photo-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.photo-section .caption {
+  font-style: italic;
+  color: #555;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.cta {
+  background-color: #f5b400;
+  color: #2e2e2e;
+}
+
+.cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.footer {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+#popup-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f5b400;
+  color: #2e2e2e;
+  padding: 15px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  font-weight: bold;
+  font-size: 1.1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  z-index: 9999;
+}
+
+#popup-message.show {
+  opacity: 1;
+  pointer-events: auto;
+}

@@ -4,68 +4,69 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Charity Water Refined</title>
-  <style>
-    body {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      background-color: #fefcf7;
-      color: #2e2e2e;
-      margin: 0;
-      line-height: 1.6;
+  <!-- Link to external CSS file for styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Turn Your Passion Into Power</h1>
+      <p>Fight for Clean Water and Justice</p>
+      <button class="btn" id="donate-now-btn">Change A Life Today</button>
+    </div>
+  </header>
+
+  <section class="value">
+    <div class="container">
+      <h2>Why It Matters</h2>
+      <p> You care deeply about justice and turning passion into real change. At charity: water, we believe clean water is a human right. That’s why 100% of public donations fund life-changing water projects, with full transparency and stories that show exactly where your impact goes. When you give, you’re not just donating. You’re standing up for dignity, for equity, and for the future of communities often left behind. This is your chance to fight for something that matters and know it’s making a difference. </p>
+    </div>
+  </section>
+
+  <section class="photo-section">
+    <div class="container">
+      <img src="img/JB.jpg"  alt="Joyful boy with clean water" />
+      <p class="caption">Real smiles. Real impact. Your support brings clean water to life.</p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Your Voice Can Create Global Change</h2>
+      <p>Every dollar helps bring clean water to people who need it most.</p>
+      <button class="btn-bordered" id="give-monthly-btn">Give Monthly</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 charity: water. Designed by Nessa Narruhn.</p>
+  </footer>
+
+  <div id="popup-message">Thank you for your generous support! Together, we make a difference.</div>
+
+  <script>
+    function showPopup(message) {
+      const popup = document.getElementById('popup-message');
+      popup.textContent = message;
+      popup.classList.add('show');
+      
+      setTimeout(() => {
+        popup.classList.remove('show');
+      }, 3000);
     }
 
-    a {
-      text-decoration: none;
-    }
+    document.getElementById('donate-now-btn').addEventListener('click', function () {
+      showPopup('Thank you for your generous support! Together, we make a difference.');
+    });
 
-    header.hero {
-      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-      url("../img/MK.jpg") no-repeat center center/cover;
-      color: #ffffff;
-      text-align: center;
-      padding: 120px 20px;
-      position: relative;
-    }
+    document.getElementById('give-monthly-btn').addEventListener('click', function () {
+      showPopup('Thank you for your generous monthly support! Together, we make a difference.');
+    });
+  </script>
+</body>
 
-    .hero-content h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-    }
-
-    .hero-content p {
-      font-size: 1.4rem;
-      margin-bottom: 30px;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-    }
-
-    .btn, .btn-bordered {
-      background-color: #f5b400;
-      color: #2e2e2e;
-      padding: 14px 28px;
-      border-radius: 6px;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: all 0.3s ease;
-      display: inline-block;
-      cursor: pointer;
-    }
-
-    .btn {
-      border: 3px solid #2e2e2e;
-    }
-
-    .btn:hover, .btn-bordered:hover {
-      background-color: #dca000;
-      border-color: #2e2e2e;
-      transform: translateY(-2px);
-    }
-
-    .btn-bordered {
-      border: 3px solid #2e2e2e;
-      background-color: transparent;
+</html>
     }
 
     .container {
